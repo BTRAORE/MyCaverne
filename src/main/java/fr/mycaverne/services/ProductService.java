@@ -9,14 +9,16 @@ import java.util.List;
 import fr.mycaverne.domain.Product;
 
 /**
- * @author C17Engineering
+ * @author TRAORE
  *
  */
 public interface ProductService {
 	
-	public List<Product> getAll();
-	public List<Product> getProducts(String type);
-	public Product getProductInfos(BigInteger id);
+	public Product findProduct(BigInteger prodId);
+	
+	public List<Product> findProducts(String category);
+	
+	public List<Product> findProducts(BigInteger userId);
 	
 
 } 

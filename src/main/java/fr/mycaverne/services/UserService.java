@@ -14,9 +14,9 @@ import fr.mycaverne.domain.User;
  *
  */
 public interface UserService {
-	public List<Product> getAll();
-	public List<User> getProduct(String profile);
-	public Product getUserInfos(BigInteger id);
-	public Product getUserProducts(BigInteger id);
-	public Product getUserOrders(BigInteger id);
+	
+	public List<Product> findUser(BigInteger id);
+	public List<User> findUsers(String profile);
+	public boolean deleteUser(BigInteger id);
+	public boolean addUser(User user);
 }
